@@ -1,0 +1,31 @@
+body {
+	background-color: E9E9E9;
+	color: #1E1E1E;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+.wrap {
+	min-width: 600px;
+	width: 80%;
+	margin: auto;
+	background-color: green;
+	overflow: hidden;
+}
+.content, aside {
+	height: 600px;
+}
+.content {
+	background-color: white;
+	float: left;
+	width: 70%;
+
+}
+aside {
+	background-color: red;
+	float: left;
+	width: 30%;
+}
+aside ul {
+	list-style: none;
+	padding-left: 0;
+}
