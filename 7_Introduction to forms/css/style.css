@@ -1,0 +1,22 @@
+body {
+	background-color: E9E9E9;
+	font-family: sans-serif;
+}
+form ul {
+	padding-left: 0;
+}
+form li {
+	list-style: none;
+	margin-bottom: 20px;
+}
+label {
+	display: block;
+	cursor: pointer;
+	color: #292929;
+	padding-bottom: 8px;
+
+}
+textarea {
+	width: 400px;
+	height: 200px;
+}
