@@ -16,3 +16,18 @@ h1 {
 div {
 	
 }
+
+.content {
+	margin-bottom: 80px;
+}
+
+.footer {
+	margin-bottom: 80px;
+	padding-top: 80px;
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.footer-link {
+	display: block;
+	margin-bottom: 8px;
+}
