@@ -10,6 +10,7 @@ body {
 	margin: auto;
 	background-color: green;
 	overflow: hidden;
+	
 }
 .content, aside {
 	height: 600px;
