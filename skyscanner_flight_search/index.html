@@ -8,15 +8,53 @@
 	</head>
 		<body>
 			<div>
-				<h1>Decostruction Skyscanner Flight Search</h1>
-				<h2>Flight Search type: Return (Round trip)</h2>
-				<img src="img/Skyscanner.gif" alt="Skyscanner Flight Search">
-				<div class="content">
-					<h2>Analisis</h2>
-					<h3>From </h3>
-					<ul>
-						<li>
-							Typeahead
+				<div class="content-hero content">
+					<h1>Decostruction Skyscanner Flight Search</h1>
+					
+					<img src="img/Skyscanner-simple.jpg" alt="Skyscanner Flight Search">
+				</div>
+				<div class="content-container">
+					<div class="content">
+						<h2>Analisis</h2>
+						<h3>Flight Search type: Return (Round trip)</h3>
+						<h3>From </h3>
+						<ul>
+							<li>
+								Typeahead
+								<ul>
+									<li>
+										Behavior: Once a letter is introduced it appears highlighted (the matching letter) in the dropdown where the results are displayed.
+										<ul>
+											<li>
+												Country (icon: flag) Country full name ( 2-letter Country code) Country full name
+											</li>
+											<li>
+												City (icon: city) City Name (“Any” when there is more than 1 airport if there is only 1 airport code) Country
+											</li>
+											<li>
+												Airport (icon: plane) Airport Full Name (IATA code) Country
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								Placeholder: Country, City or Airport
+								<ul>
+									<li>
+										Preselected based in your location
+									</li>
+								</ul>
+							</li>
+							<li>
+								Checkbox: Add nearby airports (under “From” selection)
+							</li>
+						</ul>
+						<h3>To</h3>
+						<ul>
+							<li>
+								Typeahead
+							</li>
 							<ul>
 								<li>
 									Behavior: Once a letter is introduced it appears highlighted (the matching letter) in the dropdown where the results are displayed.
@@ -33,265 +71,236 @@
 									</ul>
 								</li>
 							</ul>
-						</li>
-						<li>
-							Placeholder: Country, City or Airport
-							<ul>
-								<li>
-									Preselected based in your location
-								</li>
-							</ul>
-						</li>
-						<li>
-							Checkbox: Add nearby airports (under “From” selection)
-						</li>
-					</ul>
-					<h3>To</h3>
-					<ul>
-						<li>
-							Typeahead
-						</li>
-						<ul>
 							<li>
-								Behavior: Once a letter is introduced it appears highlighted (the matching letter) in the dropdown where the results are displayed.
+								Placeholder: Country, City or Airport
 								<ul>
 									<li>
-										Country (icon: flag) Country full name ( 2-letter Country code) Country full name
+										Preselected Everywhere
+									</li>
+								</ul>
+							</li>
+							<li>
+								Checkbox: Add nearby airports (under “To” selection)
+							</li>
+						</ul>
+						<h3>Depart</h3>
+						<ul>
+							<li>
+								Date picker (has an “x” to close it)
+								<ul>
+									<li>
+										Specific date
+										<ul>
+											<li>
+												Current month (arrows to shift to future months)
+												<ul>
+													<li>
+														Days styles (weekends are highlighted in the days of the week)
+														<ul>
+															<li>
+																Past days (grey disabled)
+															</li>
+															<li>
+																Available days in the month (active)
+															</li>
+															<li>
+																Available days next month (grey active)
+															</li>
+															<li>
+																Selected day (green background)
+															</li>
+															<li>
+																Hover day (blue background)
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										Whole month - Compare across a whole month (It applies to both dates pickers)
+										<ul>
+											<li>
+												Cheapest month
+											</li>
+											<li>
+												Specific month (you are able to select until one year in advance)
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								Placeholder: Current date
+								<ul>
+									<li>
+										Behavior
+										<ul>
+											<li>
+												Preselected current day
+											</li>
+											<li>
+												Disabled to select/see past dates
+											</li>
+										</ul>
+									</li>
+								</ul>
+								
+							</li>
+						</ul>
+						<h3>Return</h3>
+						<ul>
+							<li>
+								Date picker (has an “x” to close it)
+								<ul>
+									<li>
+										Specific date
+										<ul>
+											<li>
+												Current month (arrows to shift to future months)
+												<ul>
+													<li>
+														Days styles (weekends are highlighted in the days of the week)
+														<ul>
+															<li>
+																Past days (grey disabled)
+															</li>
+															<li>
+																Available days in the month (active)
+															</li>
+															<li>
+																Available days next month (grey active)
+															</li>
+															<li>
+																Selected day (green background)
+															</li>
+															<li>
+																Hover day (blue background)
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
 									</li>
 									<li>
-										City (icon: city) City Name (“Any” when there is more than 1 airport if there is only 1 airport code) Country
+										Whole month - Compare across a whole month (It applies to both dates pickers)
+										<ul>
+											<li>
+												Cheapest month
+											</li>
+											<li>
+												Specific month (you are able to select until one year in advance)
+											</li>
+										</ul>
 									</li>
+								</ul>
+							</li>
+							<li>
+								Placeholder: Current date
+								<ul>
 									<li>
-										Airport (icon: plane) Airport Full Name (IATA code) Country
+										Behavior:
+										<ul>
+											<li>
+												Preselected same date as the departure
+											</li>
+											<li>
+												If an earliest date than the departure date is selected this same date becomes the departure date.
+											</li>
+											<li>
+												Does not show or highlight the days in the between
+											</li>
+										</ul>
 									</li>
 								</ul>
 							</li>
 						</ul>
-						<li>
-							Placeholder: Country, City or Airport
-							<ul>
-								<li>
-									Preselected Everywhere
-								</li>
-							</ul>
-						</li>
-						<li>
-							Checkbox: Add nearby airports (under “To” selection)
-						</li>
-					</ul>
-					<h3>Depart</h3>
-					<ul>
-						<li>
-							Date picker (has an “x” to close it)
-							<ul>
-								<li>
-									Specific date
-									<ul>
-										<li>
-											Current month (arrows to shift to future months)
-											<ul>
-												<li>
-													Days styles (weekends are highlighted in the days of the week)
-													<ul>
-														<li>
-															Past days (grey disabled)
-														</li>
-														<li>
-															Available days in the month (active)
-														</li>
-														<li>
-															Available days next month (grey active)
-														</li>
-														<li>
-															Selected day (green background)
-														</li>
-														<li>
-															Hover day (blue background)
-														</li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<ul>
-								<li>
-									Whole month - Compare across a whole month (It applies to both dates pickers)
-									<ul>
-										<li>
-											Cheapest month
-										</li>
-										<li>
-											Specific month (you are able to select until one year in advance)
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							Placeholder: Current date
-							<ul>
-								<li>
-									Behavior
-									<ul>
-										<li>
-											Preselected current day
-										</li>
-										<li>
-											Disabled to select/see past dates
-										</li>
-									</ul>
-								</li>
-							</ul>
-							
-						</li>
-					</ul>
-					<h3>Return</h3>
-					<ul>
-						<li>
-							Date picker (has an “x” to close it)
-							<ul>
-								<li>
-									Specific date
-									<ul>
-										<li>
-											Current month (arrows to shift to future months)
-											<ul>
-												<li>
-													Days styles (weekends are highlighted in the days of the week)
-													<ul>
-														<li>
-															Past days (grey disabled)
-														</li>
-														<li>
-															Available days in the month (active)
-														</li>
-														<li>
-															Available days next month (grey active)
-														</li>
-														<li>
-															Selected day (green background)
-														</li>
-														<li>
-															Hover day (blue background)
-														</li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									Whole month - Compare across a whole month (It applies to both dates pickers)
-									<ul>
-										<li>
-											Cheapest month
-										</li>
-										<li>
-											Specific month (you are able to select until one year in advance)
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							Placeholder: Current date
-							<ul>
-								<li>
-									Behavior:
-									<ul>
-										<li>
-											Preselected same date as the departure
-										</li>
-										<li>
-											If an earliest date than the departure date is selected this same date becomes the departure date.
-										</li>
-										<li>
-											Does not show or highlight the days in the between
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<h3>Cabin Class and Travellers</h3>
-					<ul>
-						<li>
-							DropDown Menu (has an “x” to close it)
-							<ul>
-								<li>
-									Cabin Class (drop down) - Searches for whole month or destination everywhere only allows Economy
-									<ul>
-										<li>
-											Economy
-										</li>
-										<li>
-											Premium Economy
-										</li>
-										<li>
-											Business Class
-										</li>
-										<li>
-											First Class
-										</li>
-									</ul>
-								</li>
-								<li>
-									Adults (16+ years)
-									<ul>
-										<li>
-											- # +   (1 Adult mandatory)
-										</li>
-									</ul>
-								</li>
-								<li>
-									Children (0-15 years)
-									<ul>
-										<li>
-											- # +   (Not possible to select only children)
-											<ul>
-												<li>
-													Dropdown “Age of child” (As many as children's traveling)
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							Placeholder: 1 Adult, Economy
-						</li>
-					</ul>
-					<h3>Filter</h3>
-					<ul>
-						<li>
-							Checkbox: Direct flights only
-						</li>
-					</ul>
-					<h3>Button</h3>
-					<ul>
-						<li>
-							Search Flights
-							<ul>
-								<li>
-									Text + icon (arrow)
-									<ul>
-										<li>
-											Hover (background darker)
-										</li>
-										<li>
-											Active go to disabled state and the icon changes to a loading spinner
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					* All values have a preselected option that allows to trigger a search even in case that the user didn't select any value.`
-					<h2>Reinterpretation</h2>
-					<img src="img/oblivion-flights.png" alt="Skyscanner Flight Search">
+						<h3>Cabin Class and Travellers</h3>
+						<ul>
+							<li>
+								DropDown Menu (has an “x” to close it)
+								<ul>
+									<li>
+										Cabin Class (drop down) - Searches for whole month or destination everywhere only allows Economy
+										<ul>
+											<li>
+												Economy
+											</li>
+											<li>
+												Premium Economy
+											</li>
+											<li>
+												Business Class
+											</li>
+											<li>
+												First Class
+											</li>
+										</ul>
+									</li>
+									<li>
+										Adults (16+ years)
+										<ul>
+											<li>
+												- # +   (1 Adult mandatory)
+											</li>
+										</ul>
+									</li>
+									<li>
+										Children (0-15 years)
+										<ul>
+											<li>
+												- # +   (Not possible to select only children)
+												<ul>
+													<li>
+														Dropdown “Age of child” (As many as children's traveling)
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								Placeholder: 1 Adult, Economy
+							</li>
+						</ul>
+						<h3>Filter</h3>
+						<ul>
+							<li>
+								Checkbox: Direct flights only
+							</li>
+						</ul>
+						<h3>Button</h3>
+						<ul>
+							<li>
+								Search Flights
+								<ul>
+									<li>
+										Text + icon (arrow)
+										<ul>
+											<li>
+												Hover (background darker)
+											</li>
+											<li>
+												Active go to disabled state and the icon changes to a loading spinner
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						* All values have a preselected option that allows to trigger a search even in case that the user didn't select any value.`
+					</div>
+				</div>
+				<div class="content-reinterpretation">
+					<div class="content">
+						<h2 class="blanco">Reinterpretation</h2>
+						<img src="img/reinterpretation.jpg" alt="Skyscanner Flight Search">
+					</div>
 				</div>
 				<div class="footer">
 					<a class="footer-link" href="single/index.html">Single Flight Search</a>
