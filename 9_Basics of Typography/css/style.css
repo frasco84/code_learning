@@ -1,0 +1,19 @@
+body {
+	background-color: E9E9E9;
+	font-family: sans-serif;
+}
+h1 {
+	font-family: 'Jim Nightshade', cursive;
+	font-size: 120px;
+	text-align: center;
+	margin-top: 50px;
+	letter-spacing: 45px;
+	color: #666;
+
+	text-shadow: 
+		2px 2px 8px blue,
+		-2px -2px 8px red,
+		2px -2px 8px green,
+		-2px 2px 8px yellow;
+	font-variant: small-caps;
+}

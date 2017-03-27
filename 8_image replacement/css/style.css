@@ -1,0 +1,10 @@
+body {
+	background-color: E9E9E9;
+	font-family: sans-serif;
+}
+h1 {
+	background: url(../img/logo_signature_francisco_romano.png) no-repeat;
+	text-indent: -9999px;
+	width: 801px;
+	height: 240px;
+}
